@@ -35,7 +35,7 @@ node {
     }
 }
 stage('Push image') {
-      docker.withRegistry('https://70.37.59.226:8081', 'nexus-credentials-id') {
+      docker.withRegistry('http://70.37.59.226:8081', 'nexus-credentials-id') {
         container.push("${shortCommit}")
         container.push('latest')
       }
