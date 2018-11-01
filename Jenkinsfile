@@ -11,7 +11,7 @@ node {
         /* This builds the actual image; synonymous to
          * docker build on the command line */
 
-        app = docker.build("micdoc1993/Testing")
+        app = docker.build("micdoc1993/testing")
     }
 
     stage('Test image') {
